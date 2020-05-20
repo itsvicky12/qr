@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <h1>Transaction</h1>
+  <script type="text/javascript">
+    //var status_id = <%= @status_id %>
+    //window.location.href="intent://invoice/#Intent;scheme=apay;package=com.tonetag.mywallet;S.callback=<%=@status_id%>;end";
+    var userAgent = window.navigator.userAgent.toLowerCase();
+    alert(userAgent);
+    var mobileOS;
+  ndow.location.href="https://play.google.com/store/apps/details?id=com.tonetag.mywallet";
+    }
+​
+    if (/iphone|ipod|ipad/.test(userAgent)) {
+      mobileOS = "iOS";
+      alert(userAgent + mobileOS);
+      window.location.href="https://apps.apple.com/ua/app/oyeti/id1465564187?l=ru";
+    } else {
+    	 mobileOS = "Android";
+      alert(userAgent + mobileOS);
+      window.location.href="https://play.google.com/store/apps/details?id=com.tonetag.mywallet";
+    }
+​
+  </script>
+  </body>
+</html>
